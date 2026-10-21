@@ -8,7 +8,7 @@ def show_header():
     print(f'Let\'s play rock, paper and scissors!:')
     print("="*40)
 
-def get_player_choice(choice):
+def get_player_choice():
     while True:
         try:
             choice = int(input("""1) Rock
@@ -18,6 +18,11 @@ def get_player_choice(choice):
         except ValueError:
             print("Invalid input!")
             continue
+        if choice <1 or choice >3:
+            print("insert only 1,2 or 3!")
+            continue
+
+        return choice
 
 #"translate" player input so it can be easier to use in rules.
 def get_choice_name(choice)
