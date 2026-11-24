@@ -7,28 +7,15 @@
 # 4.7
 # False
 class Restaurant:
-    name = ""
-    category = ""
-    rating = 0.0
-    has_delivery = False
+    def __init__(self,name,category,rating,has_delivery):
+        self.name = name
+        self.category = category
+        self.rating = rating
+        self.has_delivery = has_delivery
 
-bobs_burger = Restaurant()
-bobs_burger.name = "Bob's Burgers"
-bobs_burger.category = "American Diner"
-bobs_burger.rating = 4.7
-bobs_burger.has_delivery = False
-
-xing_lings = Restaurant()
-xing_lings.name = "XingLings"
-xing_lings.category = "Chinese food"
-xing_lings.rating = 4.3
-xing_lings.has_delivery = True
-
-john_pasta = Restaurant()
-john_pasta.name = "John Pasta"
-john_pasta.category = "Italian Food"
-john_pasta.rating = 4.5
-john_pasta.has_delivery = False
+bobs_burger = Restaurant("Bob's Burger","American Diner",4.5,True)
+xing_lings = Restaurant("XingLings","Chinese food",4.3,True)
+john_pasta = Restaurant("John Pasta","Italian Food",4.5,False)
 
 print(vars(bobs_burger))
 print(vars(xing_lings))
