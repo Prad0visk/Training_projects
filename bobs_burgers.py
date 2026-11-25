@@ -13,9 +13,24 @@ class Restaurant:
         self.rating = rating
         self.has_delivery = has_delivery
 
-bobs_burger = Restaurant("Bob's Burger","American Diner",4.5,True)
-xing_lings = Restaurant("XingLings","Chinese food",4.3,True)
-john_pasta = Restaurant("John Pasta","Italian Food",4.5,False)
+bobs_burger = Restaurant(
+    name="Bob's Burger",
+    category="American Diner",
+    rating=4.5,
+    has_delivery=True
+)
+xing_lings = Restaurant(
+    name="XingLings",
+    category="Chinese food",
+    rating=4.3,
+    has_delivery=True
+)
+john_pasta = Restaurant(
+    name="John Pasta",
+    category="Italian Food",
+    rating=4.5,
+    has_delivery=False
+)
 
 print(vars(bobs_burger))
 print(vars(xing_lings))
